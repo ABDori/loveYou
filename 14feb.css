@@ -114,6 +114,7 @@ h1 {
       text-shadow: 2px 2px rgba(0, 0, 0, 0.24), -3px -3px rgba(0, 0, 0, 0.35);
       transform: translateY(20rem);
       line-height: 3rem;
+      color: rgb(250, 245, 220);
 }
 .arrows {
       display: none;
