@@ -1,0 +1,144 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+body {
+      background-color: rgb(87, 37, 92);
+}
+.wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+
+      position: relative;
+}
+.target {
+      background: url(box-removebg-preview.png) no-repeat center;
+
+      position: absolute;
+      width: 500px;
+      height: 500px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: 0.3s;
+      animation-name: shake;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes shake {
+      0% {
+            left: 30%;
+            top: 30%;
+            transform: scale(1);
+      }
+      12.5% {
+            left: 27.5%;
+            top: 27.5%;
+            transform: scale(1.1);
+      }
+      50% {
+            left: 30%;
+            top: 30%;
+            transform: scale(0.9);
+      }
+      72.5% {
+            left: 35.5%;
+            top: 27.5%;
+            transform: scale(1);
+      }
+      100% {
+            left: 30%;
+            top: 30%;
+            transform: scale(0.7);
+      }
+}
+.hidden {
+      animation: none;
+      background: none;
+      transition: 1s ease-in;
+}
+.heart {
+      display: none;
+      background: url(heart-removebg-preview.png) center no-repeat;
+      background-size: 100% auto;
+}
+.heart {
+      display: none;
+
+      animation-name: beat;
+      animation-iteration-count: infinite;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezcubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@keyframes beat {
+      0 {
+            transform: scale(1);
+      }
+      12.5% {
+            transform: scale(1.2);
+      }
+      22.5% {
+            transform: scale(0.9);
+      }
+      42.5% {
+            transform: scale(1.2);
+      }
+      62.5% {
+            transform: scale(1);
+      }
+      82.5% {
+            transform: scale(1.1);
+      }
+      100 {
+            transform: scale(1);
+      }
+}
+.visible {
+      display: flex;
+      width: 300px;
+      height: 300px;
+      z-index: 50;
+}
+h1 {
+      display: block;
+      font-size: 3rem;
+      font-family: "Redressed", cursive;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.24), -3px -3px rgba(0, 0, 0, 0.35);
+      transform: translateY(20rem);
+      line-height: 3rem;
+}
+.arrows {
+      display: none;
+}
+.arrow-left,
+.arrow-right {
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: url(kisspng-arrow-computer-icons-clip-art-red-arrow-left-curved-png-5ab19cf1ef87f1.0944128115215894899811-removebg-preview.png)
+            center no-repeat;
+      background-size: 100% auto;
+}
+.arrow-left {
+      top: 30%;
+      left: 20%;
+      transform: scaleX(-1);
+      background-size: cover;
+}
+.arrow-right {
+      top: 30%;
+      left: 70%;
+}
+.fire {
+      display: flex;
+}
