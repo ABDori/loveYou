@@ -19,10 +19,11 @@ body {
 }
 .target {
       background: url(box-removebg-preview.png) no-repeat center;
+      background-size: 100%;
 
       position: absolute;
-      width: 20vw;
-      height: 20vw;
+      width: 25vw;
+      height: 25vw;
 
       display: flex;
       justify-content: center;
@@ -36,28 +37,28 @@ body {
 }
 @keyframes shake {
       0% {
-            left: 30%;
-            top: 30%;
+            left: 35%;
+            top: 35%;
             transform: scale(1);
       }
       12.5% {
-            left: 27.5%;
-            top: 27.5%;
+            left: 36.5%;
+            top: 36.5%;
             transform: scale(1.1);
       }
       50% {
-            left: 30%;
-            top: 30%;
+            left: 38%;
+            top: 38%;
             transform: scale(0.9);
       }
       72.5% {
             left: 35.5%;
-            top: 27.5%;
+            top: 39.5%;
             transform: scale(1);
       }
       100% {
-            left: 30%;
-            top: 30%;
+            left: 35%;
+            top: 35%;
             transform: scale(0.7);
       }
 }
@@ -66,11 +67,7 @@ body {
       background: none;
       transition: 1s ease-in;
 }
-.heart {
-      display: none;
-      background: url(heart-removebg-preview.png) center no-repeat;
-      background-size: 70%;
-}
+
 .heart {
       display: none;
 
@@ -78,6 +75,8 @@ body {
       animation-iteration-count: infinite;
       animation-duration: 1.5s;
       animation-timing-function: cubic-bezcubic-bezier(0.68, -0.55, 0.265, 1.55);
+      background: url(heart-removebg-preview.png) center no-repeat;
+      background-size: 70%;
 }
 @keyframes beat {
       0 {
@@ -104,8 +103,8 @@ body {
 }
 .visible {
       display: flex;
-      width: 12vw;
-      height: 12vh;
+      width: 25vw;
+      height: 25vh;
       z-index: 50;
 }
 h1 {
@@ -123,21 +122,21 @@ h1 {
 .arrow-right {
       display: block;
       position: absolute;
-      width: 10vw;
-      height: 10vw;
+      width: 15vw;
+      height: 15vw;
       background: url(kisspng-arrow-computer-icons-clip-art-red-arrow-left-curved-png-5ab19cf1ef87f1.0944128115215894899811-removebg-preview.png)
             center no-repeat;
-      background-size: 70%;
+      background-size: 100%;
 }
 .arrow-left {
-      top: 30%;
-      left: 20%;
+      top: 45vh;
+      left: 7vw;
       transform: scaleX(-1);
       background-size: center;
 }
 .arrow-right {
-      top: 30%;
-      left: 70%;
+      top: 45vh;
+      left: 80vw;
 }
 .fire {
       display: flex;
