@@ -69,7 +69,7 @@ body {
 .heart {
       display: none;
       background: url(heart-removebg-preview.png) center no-repeat;
-      background-size: 100% auto;
+      background-size: 70%;
 }
 .heart {
       display: none;
@@ -104,8 +104,8 @@ body {
 }
 .visible {
       display: flex;
-      width: 300px;
-      height: 300px;
+      width: 12vw;
+      height: 12vh;
       z-index: 50;
 }
 h1 {
@@ -123,17 +123,17 @@ h1 {
 .arrow-right {
       display: block;
       position: absolute;
-      width: 200px;
-      height: 200px;
+      width: 10vw;
+      height: 10vw;
       background: url(kisspng-arrow-computer-icons-clip-art-red-arrow-left-curved-png-5ab19cf1ef87f1.0944128115215894899811-removebg-preview.png)
             center no-repeat;
-      background-size: 100% auto;
+      background-size: 70%;
 }
 .arrow-left {
       top: 30%;
       left: 20%;
       transform: scaleX(-1);
-      background-size: cover;
+      background-size: center;
 }
 .arrow-right {
       top: 30%;
